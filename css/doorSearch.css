@@ -1,0 +1,25 @@
+body{
+    padding-top:0.88rem;
+    background: #eee;
+}
+.city{
+    line-height: 0.8rem;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.content{
+    padding:0 0.2rem;
+}
+.content li{
+    border-radius: 0.04rem;
+    margin-top: 0.2rem;
+    height: 2rem;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+ display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+}
+.content li img{
+    width: 2.3rem;
+    height: 2rem;
+}
