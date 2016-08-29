@@ -10,24 +10,23 @@ header{
     position: fixed;
     top:0;
     z-index: 99;
-    border-bottom: 1px solid #eee;
 }
 header a:first-child{
     display: inline-block;
     float: left;
-    width: 0.22rem;
-    height: 0.42rem;
-    background: url(../images/companyService/back.png) no-repeat center center;
+    width: 0.2rem;
+    height: 0.32rem;
+    background: url(../images/back.png) no-repeat center center;
     background-size:0.22rem 0.42rem ;
 }
-header a:last-child{
-    display: inline-block;
-    float: right;
-    width: 0.32rem;
-    height: 0.42rem;
-    background: url(../images/companyService/message.png) no-repeat center center;
-    background-size: 0.32rem 0.42rem;
-}
+/*header a:last-child{*/
+    /*display: inline-block;*/
+    /*float: right;*/
+    /*width: 0.32rem;*/
+    /*height: 0.42rem;*/
+    /*background: url(../images/companyService/message.png) no-repeat center center;*/
+    /*background-size: 0.32rem 0.42rem;*/
+/*}*/
 header a{
-    margin:0.24rem 0;
+    margin-top:0.28rem;
 }

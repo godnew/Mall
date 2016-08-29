@@ -1,0 +1,43 @@
+body{
+    padding-top: 0.88rem;
+}
+h1{
+    line-height: 0.8rem;
+    font-size: 0.24rem;
+    color: #333;
+    padding-left: 0.2rem;
+    background: #eee;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.city{
+    padding:0 0.2rem;
+    background: #fff;
+}
+.city li{
+    line-height: 0.8rem;
+    font-size: 0.24rem;
+    color: #666;
+    height: 0.8rem;
+    border-top:1px solid #ccc;
+}
+.city li:first-child{
+    border:none;
+}
+.location{
+    padding:0 0.2rem;
+    background: #fff;
+}
+.location li{
+    line-height: 0.8rem;
+    font-size: 0.24rem;
+    color: #666;
+    height: 0.8rem;
+}
+.active{
+    background: url(../images/active.png) no-repeat 6.8rem center;
+    background-size: 0.12rem 0.12rem;
+    -o-background-size: 0.12rem 0.12rem;
+    -wekit-background-size: 0.12rem 0.12rem;
+}
