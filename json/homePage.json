@@ -1,0 +1,14 @@
+[
+    {
+        "src":"images/homePage/thing1.png",
+        "name":"新能源开发",
+        "price":"预售¥11000",
+        "oprice":"原价¥11900"
+    },
+    {
+        "src":"images/homePage/thing2.png",
+        "name":"新能源开发",
+        "price":"预售¥11000",
+        "oprice":"原价¥11900"
+    }
+]

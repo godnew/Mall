@@ -1,0 +1,61 @@
+/*
+KISSY CSS Reset
+������������ǽ��ܲ��ɷֵ�
+��ɫ��1.��Ӧ���� 2.�����������������
+ά������(lifesinger@gmail.com), ��(ragecarrier@gmail.com)
+*/
+
+/* �������߾� */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements �ṹԪ�� */
+dl, dt, dd, ul, ol, li, /* list elements �б�Ԫ�� */
+pre, /* text formatting elements �ı���ʽԪ�� */
+fieldset, lengend, button, input, textarea, /* form elements �?Ԫ�� */
+th, td { /* table elements ���Ԫ�� */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 0.12rem;
+}
+
+address, cite, dfn, em, var { font-style: normal; } /* ��б����� */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* ͳһ�ȿ����� */
+
+/* �����б�Ԫ�� */
+ul, ol { list-style: none; }
+
+/* �����ı���ʽԪ�� */
+a { text-decoration: none;     margin:0;
+    padding:0;
+    border:0;
+    vertical-align:baseline;
+    background:transparent;
+    cursor: pointer;
+}
+a:hover { text-decoration: none; }
+
+abbr[title], acronym[title] { /* ע��1.ie6 ��֧�� abbr; 2.������������ѡ���ie6 ����Ч�� */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* ���ñ?Ԫ�� */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img ������������ img �ޱ߿� */
+/* ע��optgroup �޷����� */
+/* ���ñ��Ԫ�� */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ���� hr */
+hr {
+    border: none;
+    height: 1px;
+}
+input{
+    border:none;
+}

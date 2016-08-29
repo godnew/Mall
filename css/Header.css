@@ -1,0 +1,33 @@
+header{
+    width:100%;
+    box-sizing: border-box;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    padding:0 0.3rem;
+    font-size: 0.32rem;
+    color:#6a6a6a;
+    background: #fff;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    border-bottom: 1px solid #eee;
+}
+header a:first-child{
+    display: inline-block;
+    float: left;
+    width: 0.22rem;
+    height: 0.42rem;
+    background: url(../images/companyService/back.png) no-repeat center center;
+    background-size:0.22rem 0.42rem ;
+}
+header a:last-child{
+    display: inline-block;
+    float: right;
+    width: 0.32rem;
+    height: 0.42rem;
+    background: url(../images/companyService/message.png) no-repeat center center;
+    background-size: 0.32rem 0.42rem;
+}
+header a{
+    margin:0.24rem 0;
+}

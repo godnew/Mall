@@ -1,0 +1,42 @@
+header{
+    height:0.88rem;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 99;
+}
+header span{
+    float:left;
+    width: 0.8rem;
+    height: 0.26rem;
+    margin-left: 0.2rem;
+    margin-top: 0.32rem;
+    font-size: 0.22rem;
+    line-height: 0.26rem;
+    color: #fff;
+    background: url(../images/down.png) no-repeat right center;
+    background-size: 0.23rem 0.12rem;
+    -o-background-size: 0.23rem 0.12rem;
+    -webkit-background-size: 0.23rem 0.12rem;
+}
+header input{
+    float:left;
+    width:4.38rem;
+    height: 0.55rem;
+    line-height: 0.6rem;
+    font-size: 0.22rem;
+    color:#999;
+    margin-left: 0.25rem;
+    padding-left: 0.62rem;
+    background:#fff url(../images/homePage/bigger.png) no-repeat 0.12rem center ;
+    background-size: 0.25rem 0.25rem;
+    border-radius: 0.1rem;
+    margin-top:0.14rem;
+}
+header img{
+    float: right;
+    margin-right: 0.2rem;
+    margin-top:0.22rem;
+    width:0.45rem;
+    height: 0.45rem;
+}

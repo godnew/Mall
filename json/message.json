@@ -1,0 +1,26 @@
+[
+    {
+        "img":"images/message/icon1.png",
+        "name":"活动",
+        "time":"2016.02.09",
+        "content":"火热推荐，十一买就送活动，活动详情尽在本网站"
+    },
+    {
+        "img":"images/message/icon2.png",
+        "name":"系统公告",
+        "time":"2016.03.09",
+        "content":"火热推荐，十一买就送活动，活动详情尽在本网站"
+    },
+    {
+        "img":"images/message/icon3.png",
+        "name":"新闻",
+        "time":"2016.05.09",
+        "content":"火热推荐，十一买就送活动，活动详情尽在本网站"
+    },
+    {
+        "img":"images/message/icon4.png",
+        "name":"积分",
+        "time":"2016.06.09",
+        "content":"火热推荐，十一买就送活动，活动详情尽在本网站"
+    }
+]

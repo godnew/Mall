@@ -1,0 +1,132 @@
+body{
+    padding-bottom: 1rem;
+}
+.flexslider {
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    height: 4.25rem;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.flexslider .slides li {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom:0.15rem;
+    text-align: center;
+    font-size: 0.15rem;
+}
+
+.flex-control-nav li {
+    margin-left: 0.24rem;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.flex-control-paging li a {
+    background: url(../images/homePage/dot.png) no-repeat 0 -0.15rem;
+    background-size:0.15rem 0.3rem ;
+    display: block;
+    height: 0.15rem;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 0.15rem;
+    cursor: pointer;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+    background-position: 0 0;
+}
+.flexslider .slides a img {
+    width: 100%;
+    display: block;
+}
+.type{
+    height: 2.25rem;
+    padding:0 0.1rem;
+}
+.type li img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.flexslider1 {
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    height: 1.75rem;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.flexslider1 .slides li {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-control-nav1 {
+    width: 100%;
+    position: absolute;
+    bottom:0.15rem;
+    text-align: center;
+    font-size: 0.15rem;
+}
+
+.flex-control-nav1 li {
+    margin-left: 0.18rem;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.flex-control-paging1 li a {
+    background: url(../images/homePage/dot1.png) no-repeat 0 -0.15rem;
+    background-size:0.15rem 0.3rem ;
+    display: block;
+    height: 0.15rem;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 0.15rem;
+    cursor: pointer;
+}
+
+.flex-control-paging1 li a.flex-active,
+.flex-control-paging1 li.active a {
+    background-position: 0 0;
+}
+.flexslider1 .slides a img {
+    width: 100%;
+    display: block;
+}
+#banner_tabs1{
+    border-top: 0.2rem solid #eee;
+    border-bottom: 0.2rem solid #eee;
+}
+.title{
+    height: 0.8rem;
+    border-left: 0.1rem solid #fc4d48;
+    padding-left: 0.2rem;
+    line-height: 0.8rem;
+}
+.intro{
+    background: url(../images/homePage/mall.png) no-repeat 0.3rem center;
+    background-size: 0.96rem 0.45rem;
+    -o-background-size: 0.96rem 0.45rem;
+    -webkit-background-size: 0.96rem 0.45rem;
+}
+.intro p{
+    margin-left: 1.6rem;
+}
+.intro p span{
+    background: #fc4d48;
+    line-height: .25rem;
+    border-radius: 0.02rem;
+    margin-right: 0.2rem;
+}

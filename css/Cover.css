@@ -1,0 +1,25 @@
+
+.am-share { font-size: 0.14rem; border-radius: 0; bottom: 0; left: 0; position: fixed; text-align: center; -webkit-transform: translateY(100%); -ms-transform: translateY(100%); transform: translateY(100%); -webkit-transition: -webkit-transform 300ms; transition: transform 300ms ; width: 100%; z-index: 1110; }
+.am-modal-active { transform: translateY(0px);  -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0) }
+.am-modal-out { z-index: 1109; -webkit-transform: translateY(100%); -ms-transform: translateY(100%); transform: translateY(100%) }
+
+.am-share-title { background-color: #fff; border-bottom: 1px solid #fff;  color: #6a6a6a;   padding: 0 0.2rem;line-height: 0.9rem;font-size: 0.22rem;text-align: left; }
+
+.am-share-footer .share_btn { color: #fff;  display: block; width: 100%; background-color: #e8373b; border: 1px solid #e6e6e6; border-radius: 0; cursor: pointer;  font-size: 0.22rem;  line-height: 1rem; text-align: center; transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;  white-space: nowrap;font-family:"微软雅黑";  }
+
+.am-share-sns {padding:0.3rem 0; background-color: #fff;   zoom:1; overflow:auto; }
+
+.am-share-sns li { display: block; float: left; height: auto;  width: 20%; }
+
+.am-share-sns a { color: #555; display: block; text-decoration:none; }
+.am-share-sns span { display: block; }
+
+.am-share-sns li i { background-position: center 50%; background-repeat: no-repeat; background-size: 1.1rem 1.1rem; background-color: #ccc; color: #fff; display: inline-block; font-size: 0.18rem; height: 1.1rem; line-height: 1.1rem; margin-bottom: 5px; width: 1.1rem; }
+.share-icon-weibo1:nth-of-type(1) { background-image: url(../images/product/share1.png); }
+.share-icon-weibo2 { background-image: url(../images/product/share2.png); }
+.share-icon-weibo3 { background-image: url(../images/product/share3.png); }
+.share-icon-weibo4 { background-image: url(../images/product/share4.png); }
+.share-icon-weibo5{ background-image: url(../images/product/share5.png); }
+
+.sharebg { background-color: rgba(0, 0, 0, 0.6); bottom: 0; height: 100%; left: 0; opacity: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 1100; display:none; }
+.sharebg-active { opacity: 1; display:block; }
