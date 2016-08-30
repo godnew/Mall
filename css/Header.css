@@ -17,7 +17,7 @@ header a:first-child{
     width: 0.2rem;
     height: 0.32rem;
     background: url(../images/back.png) no-repeat center center;
-    background-size:0.22rem 0.42rem ;
+    background-size:0.21rem 0.32rem ;
 }
 /*header a:last-child{*/
     /*display: inline-block;*/
