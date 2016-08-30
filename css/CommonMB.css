@@ -53,7 +53,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .pct75{width:75%;}
 .pct80{width:80%;}
 .pct90{width:90%;}
-.pct100{width:100%;}
+.apple {width:100%;}
 /* line-height */
 .lh0{line-height:0;}
 .lh16{line-height:.14rem;}
