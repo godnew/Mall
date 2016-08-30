@@ -1,0 +1,53 @@
+body{
+    padding-top:0.88rem;
+    background: #eee;
+}
+header{
+    background: #fc4d48;
+    color: #fff;
+}
+header a:first-child{
+    background: url(../images/back-white.png) no-repeat center center;
+    background-size:0.2rem 0.32rem ;
+}
+input{
+    float:left;
+    width:4.38rem;
+    height: 0.55rem;
+    line-height: 0.6rem;
+    font-size: 0.22rem;
+    color:#999;
+    margin-left: 0.25rem;
+    padding-left: 0.62rem;
+    background:#fff url(../images/homePage/bigger.png) no-repeat 0.12rem center ;
+    background-size: 0.25rem 0.25rem;
+    border-radius: 0.1rem;
+    margin-top:0.14rem;
+}
+input{
+    width: 7.1rem;
+    margin-left: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #fff;
+}
+.content{
+    padding:0 0.2rem;
+}
+.content li{
+    border-radius: 0.04rem;
+    margin-top: 0.2rem;
+    padding:0.2rem;
+    height: 1.6rem;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+    background:#fff url(../images/right.png) no-repeat 6.7rem center;
+    background-size: 0.16rem 0.3rem;
+}
+.content li img{
+    width: 2rem;
+    height: 1.6rem;
+}
