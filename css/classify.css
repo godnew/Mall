@@ -1,0 +1,106 @@
+body{
+    background: #eee;
+    padding-bottom: 1rem;
+}
+header{
+    padding: 0 0.2rem;
+}
+header input{
+    width: 7.1rem;
+    margin-left: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #fff;
+}
+.title{
+    width:5.5rem;
+    margin:auto;
+    margin-top:1rem;
+    font-size: 0.36rem;
+    color: #fc4d48;
+}
+#first{
+    border-top-left-radius: 0.1rem;
+    -moz-border-radius-topleft: 0.1rem;
+    -webkit-border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
+    -moz-border-radius-bottomleft: 0.1rem;
+    -webkit-border-bottom-left-radius: 0.1rem;
+    border:1px solid #fc4d48;
+    line-height: 0.66rem;
+    width:50%;
+    text-align: center;
+}
+#second{
+    border-top-right-radius: 0.1rem;
+    -moz-border-radius-topright: 0.1rem;
+    -webkit-border-top-right-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    -moz-border-radius-bottomright: 0.1rem;
+    -webkit-border-bottom-right-radius: 0.1rem;
+    border:1px solid #fc4d48;
+    line-height: 0.66rem;
+    width:50%;
+    text-align: center;
+}
+.topActive{
+    background: #fc4d48;
+    color: #fff;
+}
+#content1{
+    padding:0 0.2rem;
+}
+#content1>li{
+    height: 1.9rem;
+    border-radius: 0.1rem;
+    background: #fff;
+    margin-top: 0.2rem;
+    padding: 0.05rem 0;
+}
+#content1>li div{
+    width: 2rem;
+    height: 1.9rem;
+}
+#content1>li ul li{
+    font-size: 0.24rem;
+    line-height: 0.38rem;
+    color: #666;
+}
+#content1>li ul li a{
+    color: #666;
+}
+#content2{
+    margin-top: 0.24rem;
+}
+#content2>ul{
+    float: left;
+}
+#content2>ul li{
+    width:1.5rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.24rem;
+}
+.side{
+    color: #666;
+    background: #e5e5e5;
+}
+.sideActive{
+    color: #fc4d48;
+    background: #fff;
+}
+#content2 > div{
+    float: left;
+    width: 6rem;
+    background: #fff;
+}
+#content2 > div h1{
+    height: 1rem;
+}
+#content2 > div >ul li{
+    width:2rem;
+    height: 2rem;
+}
