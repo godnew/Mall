@@ -13,6 +13,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .h22{height:.22rem;}
 .h24{height:.24rem;}
 .h30{height:.30rem;}
+.h100{height: 1rem;}
 /* width */
 /* fixed width value */
 .w20{width:.20rem;}
