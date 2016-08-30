@@ -1,0 +1,30 @@
+body{
+    padding-top:0.88rem;
+}
+header{
+    background: #fc4d48;
+    color: #fff;
+}
+header a:first-child{
+    background: url(../images/back-white.png) no-repeat center center;
+    background-size:0.2rem 0.32rem ;
+}
+ul{
+    width: 100%;
+}
+ul li{
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 3rem;
+    border-bottom: 1px solid #ccc;
+}
+ul li:nth-of-type(2n-1){
+    border-right: 1px solid #ccc;
+}
+ul li img{
+    margin-top: 0.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
