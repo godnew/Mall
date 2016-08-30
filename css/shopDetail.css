@@ -1,0 +1,28 @@
+body{
+    background: #eee;
+    padding-top: 0.88rem;
+}
+header a:last-child{
+    display: inline-block;
+    float: right;
+    width: 0.32rem;
+    height: 0.32rem;
+    font-size: 0.6rem;
+    color: #666;
+    line-height: 0.2rem;
+}
+p{
+    border-radius: 0.1rem;
+}
+#btn{
+    width:7.1rem;
+    margin: auto;
+    margin-top: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fc4d48;
+    color: #fff;
+    font-size: 0.28rem;
+    border-radius: 0.1rem;
+    text-align: center;
+}
