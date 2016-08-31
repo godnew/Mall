@@ -81,7 +81,46 @@
 </div>
 <div id="btn" class="df">
     <div class="fx1 tc">加入购物车</div>
-    <div class="fx1 tc">立即购买</div>
+    <div class="fx1 tc" id="buy">立即购买</div>
+</div>
+<div class="am-share">
+    <div class="am-share-title">
+        <img src="images/thingDetail/img.png" alt="" style="width: 2.2rem;height: 2.2rem;"/>
+        <p class="f34 gs mt20">¥4533.00-5499.00</p>
+        <p class="f26 g3 mt10">库存 5107件</p>
+        <p class="f26 g3 mt10 lh30">请选择类型：网络类型 机身颜色 机身内存</p>
+        <span id="del"></span>
+    </div>
+    <form action="">
+    <div class="am-share-content">
+
+            <h2 class="n f24 g9 mt30">内存</h2>
+            <ul class="size df mt30">
+                <li><input type="text" readonly value="16G" style="width: 0.9rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="32G" style="width: 0.9rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="64G" style="width: 0.9rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+            </ul>
+            <h2 class="n f24 g9 mt30">网络类型</h2>
+            <ul class="net df mt30">
+                <li><input type="text" readonly value="移动4G" style="width: 1rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="联通4G" style="width: 1rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="电信4G" style="width: 1rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+            </ul>
+            <h2 class="n f24 g9 mt30">机身颜色</h2>
+            <ul class="color df mt30">
+                <li><input type="text" readonly value="金色" style="width: 0.9rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="玫瑰金色" style="width: 1.55rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+            </ul>
+            <h2 class="n f24 g9 mt30">套餐类型</h2>
+            <ul class="type df mt30">
+                <li><input type="text" readonly value="官方标配" style="width: 1.5rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="套餐一" style="width: 1.25rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="套餐二" style="width: 1.25rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+                <li style="margin-left: 0.4rem;"><input type="text" readonly value="套餐三" style="width: 1.25rem;height: 0.7rem;text-align: center;line-height: 0.7rem;border: 1px solid #ccc;background: #fff;border-radius: 0.04rem;"/></li>
+            </ul>
+    </div>
+    <input type="submit" value="立即购买"/>
+    </form>
 </div>
 <script src="js/slider.js"></script>
 <script src="js/touch-0.2.11-min.js"></script>
@@ -110,6 +149,32 @@
         });
         touch.on('.bannerSlider', 'swiperight', function(ev){
             bannerSlider.prev();
+        });
+        function toshare(){
+            $(".am-share").addClass("am-modal-active");
+            if($(".sharebg").length>0){
+                $(".sharebg").addClass("sharebg-active");
+            }else{
+                $("body").append('<div class="sharebg"></div>');
+                $(".sharebg").addClass("sharebg-active");
+            }
+            document.documentElement.style.overflow='hidden';
+            document.body.style.overflow='hidden';
+            $(".sharebg-active,.share_btn,#del").click(function(){
+                $(".am-share").removeClass("am-modal-active");
+                setTimeout(function(){
+                    $(".sharebg-active").removeClass("sharebg-active");
+                    $(".sharebg").remove();
+                },300);
+                document.documentElement.style.overflow='auto';
+                document.body.style.overflow='auto';
+            })
+        }
+        $("#buy").click(function(){
+            toshare();
+        });
+        $("input[type='text']").click(function(){
+            $(this).addClass("inputActive").parent().siblings().children().removeClass("inputActive");
         });
     });
 </script>

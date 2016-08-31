@@ -149,3 +149,50 @@ header a:nth-of-type(2){
     color: #fff;
     background: #fc4d48;
 }
+.am-share {background: #fff; font-size: 0.14rem; border-radius: 0; bottom: 0; left: 0; position: fixed;  display: none; width: 100%; z-index: 1110; }
+.am-modal-active { display: block; }
+.am-modal-out { z-index: 1109; display: none;}
+.am-share-title{
+    position: relative;
+    height: 1.95rem;
+    padding-left: 2.7rem;
+    border-bottom: 1px solid #eee;
+}
+.am-share-title img{
+    position: absolute;
+    top:-0.4rem;
+    left: 0.2rem;
+}
+.am-share-title span{
+    display: inline-block;
+    width: 0.48rem;
+    height: 0.48rem;
+    position: absolute;
+    top:0.26rem;
+    right: 0.15rem;
+    background: url(../images/thingDetail/del.png) no-repeat center center;
+    background-size: 0.48rem 0.48rem;
+}
+.am-share-content{
+    padding-left: 0.35rem;
+}
+.am-share-content input{
+    font-size: 0.26rem;
+    color: #999;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 0.9rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #fff;
+    background: #fc4d48;
+    font-size: 0.36rem;
+    margin-top: 0.3rem;
+}
+.inputActive{
+    border:1px solid #fc4d48!important;
+    color: #333!important;
+}
+.sharebg { background-color: rgba(0, 0, 0, 0.6); bottom: 0; height: 100%; left: 0; opacity: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 1100; display:none; }
+.sharebg-active { opacity: 1; display:block; }
