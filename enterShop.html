@@ -15,10 +15,15 @@
 <header class="tc">
     <a href="javascript:history.go(-1)"></a>
     店铺详情
-    <a href="">+</a>
+    <a href="javascript:return false;" id="share">+</a>
+    <div id="collect" style="display: none;">
+        <span id="point"></span>
+        <p>收藏</p>
+        <p>分享</p>
+    </div>
 </header>
 <div>
-    <img src="images/enterShop/banner.png" alt="" class="pct100"/>
+    <img src="images/enterShop/banner.png" alt="" style="width: 100%;height: 4rem"/>
 </div>
 <div class="intro">
     <p class="f26 g3 pt20">地址：A区1F   1245号  </p>
@@ -32,26 +37,40 @@
 </ul>
 <ul id="content" class="df fww">
     <li class="tc">
-        <img src="images/enterShop/thing.png" alt="" class="pct100 dib"/>
+        <img src="images/enterShop/thing.png" alt="" style="width:2.36rem;height: 2.36rem;"/>
         <hr/>
         <p class="tc f20 g3 mt20">Apple/苹果 iPhone6s 16G   </p>
         <p class="tc f20 g3 mt15">全网通4G智能手机 原封国行</p>
         <p class="tc f28 g3 mt20">￥5368</p>
     </li>
     <li class="tc">
-        <img src="images/enterShop/thing.png" alt="" class="pct100 dib"/>
+        <img src="images/enterShop/thing.png" alt="" style="width:2.36rem;height: 2.36rem;"/>
         <hr/>
         <p class="tc f20 g3 mt20">Apple/苹果 iPhone6s 16G   </p>
         <p class="tc f20 g3 mt15">全网通4G智能手机 原封国行</p>
         <p class="tc f28 g3 mt20">￥5368</p>
     </li>
     <li class="tc">
-        <img src="images/enterShop/thing.png" alt="" class="pct100 dib"/>
+        <img src="images/enterShop/thing.png" alt="" style="width:2.36rem;height: 2.36rem;"/>
         <hr/>
         <p class="tc f20 g3 mt20">Apple/苹果 iPhone6s 16G   </p>
         <p class="tc f20 g3 mt15">全网通4G智能手机 原封国行</p>
         <p class="tc f28 g3 mt20">￥5368</p>
     </li>
 </ul>
+
+<script>
+    $(function(){
+        $("#share").click(function(){
+            if($(this).text()=="+"){
+                $(this).html("×");
+                $("#collect").show();
+            }else{
+                $(this).html("+");
+                $("#collect").hide();
+            }
+        });
+    });
+</script>
 </body>
 </html>

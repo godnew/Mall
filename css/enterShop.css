@@ -9,7 +9,7 @@ header{
 header a:first-child{
     background-image:url(../images/back-white.png);
 }
-header a:last-child{
+header a:nth-of-type(2){
     display: inline-block;
     float: right;
     width: 0.32rem;
@@ -60,4 +60,30 @@ hr{
 }
 #content li:nth-of-type(2n-1){
     margin-right: 0.2rem;
+}
+#collect{
+    position: absolute;
+    bottom: -1.15rem;
+    right: 0.25rem;
+    border-radius:0.1rem ;
+    background: #fff;
+}
+#collect p{
+    line-height: 0.54rem;
+    width: 0.96rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #999;
+}
+#collect p:nth-of-type(1){
+    border-bottom: 0.02rem solid #eee;
+}
+#point{
+    display: inline-block;
+    position: absolute;
+    border-bottom: 0.12rem solid #fff;
+    border-left:0.07rem solid transparent ;
+    border-right:0.07rem solid transparent ;
+    top:-0.12rem;
+    right: 0.1rem;
 }
