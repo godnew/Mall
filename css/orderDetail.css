@@ -1,0 +1,45 @@
+body{
+    padding-top: 1.18rem;
+    background: #eeeeee;
+}
+.address{
+    height: 0.8rem;
+    padding:0.25rem 0.9rem 0.35rem 0.3rem;
+    background: #fff url(../images/right.png) no-repeat 7.04rem center;
+    background-size:0.16rem 0.3rem ;
+}
+h1{
+    line-height: 0.9rem!important;
+    padding-left: 1rem;
+    background: #fff;
+    height: 0.9rem;
+}
+.intro{
+    height: 1.8rem;
+    margin-top: 0.2rem;
+}
+form{
+    margin-top: 0.2rem;
+}
+form ul li{
+    height: 0.88rem;
+    background: #fff;
+    background-size:0.16rem 0.3rem ;
+    border-bottom: 1px solid #eee;
+}
+#pay{
+    height: 0.9rem;
+    margin-top:0.8rem ;
+}
+input[type="submit"]{
+    width: 1.75rem;
+    height: 0.9rem;
+    background: #fc4d48;
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.26rem;
+}
+#pay p{
+    line-height: 0.9rem!important;
+}

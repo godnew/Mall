@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/orderDetail.css">
+    <title>订单详情</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    订单详情
+</header>
+<div class="address">
+    <div class="df jcsb f28 g3"><span>收货人：张三</span><span>18118122522</span></div>
+    <div class="f28 g3 mt20">收货地址：上海市松江区松江新城1888弄888号</div>
+</div>
+<h1 class="f28 n mt20">苹果数码</h1>
+<div class="intro df pl20 pr30">
+    <img src="images/thingDetail/apple.png" alt="" style="width: 1.8rem;height: 1.8rem;"/>
+    <div class="fx1 ml30">
+        <p class="f28 g3 lh40">送1.5G流量Apple/苹果 iPhone 6s公开 版全网通公开版苹果手机6s</p>
+        <p class="f20 g6 lh22">网络类型：移动4G/联通4G/电信4G；机身颜色：金色；套餐类型：官方标配;内存：64G</p>
+        <p class="mt20 df jcsb"><span class="f26 gs">¥5499.00</span><span class="f30 g3">×1</span></p>
+    </div>
+</div>
+<form action="">
+    <ul>
+        <li class="df jcsb aic"><label for="count" class="f24 g3 ml30">购买数量</label><div class="mr30"><span style="display: inline-block;width: 0.3rem;height: 0.3rem;text-align: center;line-height: 0.3rem;background: #eee;font-size: 0.3rem;color: #999;">-</span><input value="1" type="text" readonly name="count" id="count" style="width: 0.7rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: center;"/><span style="display: inline-block;width: 0.3rem;height: 0.3rem;text-align: center;line-height: 0.3rem;background: #eee;font-size: 0.3rem;color: #999;">+</span></div></li>
+        <li class="df jcsb aic pr30" style="background:#fff url(images/right.png) no-repeat 7.04rem center;"><label for="count" class="f24 g3 ml30">配送方式</label><div class="mr30"><input value="快递 平邮" type="text" readonly name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: right;"/></div></li>
+        <li class="df jcsb aic pr30" style="background:#fff url(images/right.png) no-repeat 7.04rem center;"><label for="count" class="f24 g3 ml30">支付方式</label><div class="mr30"><input value="支付宝" type="text" readonly name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: right;"/></div></li>
+        <li class="df  aic pr30"><label for="count" class="f24 g3 ml30">发票抬头：</label><div class="mr30"><input value="" type="text"  name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;margin-left: 0.5rem;"/></div></li>
+        <li class="df  aic pr30"><label for="count" class="f24 g3 ml30">买家留言：</label><div class="mr30"><input value="" type="text"  name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;margin-left: 0.5rem;"/></div></li>
+        <li class="df aic pr30 jcfe f24 g3">共<span>1</span>件，合计：<span class="gs">¥5499.00</span></li>
+    </ul>
+    <div class="df" id="pay"><p class="fx1 tr f24 pr30 bgwh">共<span class="gs">1</span>件，总金额：<span class="gs">￥5499.00</span></p><input type="submit" class="提交订单"/></div>
+</form>
+</body>
+</html>
