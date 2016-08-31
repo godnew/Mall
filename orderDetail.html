@@ -31,14 +31,35 @@
 </div>
 <form action="">
     <ul>
-        <li class="df jcsb aic"><label for="count" class="f24 g3 ml30">购买数量</label><div class="mr30"><span style="display: inline-block;width: 0.3rem;height: 0.3rem;text-align: center;line-height: 0.3rem;background: #eee;font-size: 0.3rem;color: #999;">-</span><input value="1" type="text" readonly name="count" id="count" style="width: 0.7rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: center;"/><span style="display: inline-block;width: 0.3rem;height: 0.3rem;text-align: center;line-height: 0.3rem;background: #eee;font-size: 0.3rem;color: #999;">+</span></div></li>
-        <li class="df jcsb aic pr30" style="background:#fff url(images/right.png) no-repeat 7.04rem center;"><label for="count" class="f24 g3 ml30">配送方式</label><div class="mr30"><input value="快递 平邮" type="text" readonly name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: right;"/></div></li>
-        <li class="df jcsb aic pr30" style="background:#fff url(images/right.png) no-repeat 7.04rem center;"><label for="count" class="f24 g3 ml30">支付方式</label><div class="mr30"><input value="支付宝" type="text" readonly name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: right;"/></div></li>
-        <li class="df  aic pr30"><label for="count" class="f24 g3 ml30">发票抬头：</label><div class="mr30"><input value="" type="text"  name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;margin-left: 0.5rem;"/></div></li>
-        <li class="df  aic pr30"><label for="count" class="f24 g3 ml30">买家留言：</label><div class="mr30"><input value="" type="text"  name="count" id="count" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;margin-left: 0.5rem;"/></div></li>
-        <li class="df aic pr30 jcfe f24 g3">共<span>1</span>件，合计：<span class="gs">¥5499.00</span></li>
+        <li class="df jcsb aic"><label for="count" class="f24 g3 ml30">购买数量</label><div class="mr30"><span style="display: inline-block;width: 0.3rem;height: 0.3rem;text-align: center;line-height: 0.3rem;background: #eee;font-size: 0.3rem;color: #999;" id="reduce">-</span><input value="1" type="text" readonly name="count" id="count" style="width: 0.7rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: center;"/><span style="display: inline-block;width: 0.3rem;height: 0.3rem;text-align: center;line-height: 0.3rem;background: #eee;font-size: 0.3rem;color: #999;" id="plus">+</span></div></li>
+        <li class="df jcsb aic pr30" style="background:#fff url(images/right.png) no-repeat 7.04rem center;"><label for="count" class="f24 g3 ml30">配送方式</label><div class="mr30"><input value="快递 平邮" type="text" readonly name="count" id="" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: right;"/></div></li>
+        <li class="df jcsb aic pr30" style="background:#fff url(images/right.png) no-repeat 7.04rem center;"><label for="count" class="f24 g3 ml30">支付方式</label><div class="mr30"><input value="支付宝" type="text" readonly name="count" id="" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;text-align: right;"/></div></li>
+        <li class="df  aic pr30"><label for="count" class="f24 g3 ml30">发票抬头：</label><div class="mr30"><input value="" type="text"  name="count" id="" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;margin-left: 0.5rem;"/></div></li>
+        <li class="df  aic pr30"><label for="count" class="f24 g3 ml30">买家留言：</label><div class="mr30"><input value="" type="text"  name="count" id="" style="width: 2rem;line-height: 0.3rem;background: #fff;font-size:0.26rem ;margin-left: 0.5rem;"/></div></li>
+        <li class="df aic pr30 jcfe f24 g3">共<span class="total">1</span>件，合计：<span class="gs">¥5499.00</span></li>
     </ul>
-    <div class="df" id="pay"><p class="fx1 tr f24 pr30 bgwh">共<span class="gs">1</span>件，总金额：<span class="gs">￥5499.00</span></p><input type="submit" class="提交订单"/></div>
+    <div class="df" id="pay"><p class="fx1 tr f24 pr30 bgwh">共<span class="gs total">1</span>件，总金额：<span class="gs">￥5499.00</span></p><input type="submit" class="提交订单"/></div>
 </form>
+<script>
+    $(function(){
+        $("#reduce").click(function(){
+            var v=$("#count").val();
+            if(v<=1){
+                $("#count").val(1);
+                $(".total").text(1);
+            }else{
+                v--;
+                $("#count").val(v);
+                $(".total").text(v);
+            }
+        });
+        $("#plus").click(function(){
+            var v=$("#count").val();
+            v++;
+            $("#count").val(v);
+            $(".total").text(v);
+        });
+    });
+</script>
 </body>
 </html>

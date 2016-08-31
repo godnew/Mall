@@ -1,0 +1,50 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+form>div{
+    margin-top: 0.2rem;
+    background: #fff;
+}
+input[type="checkbox"]{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+h1{
+    line-height: 0.9rem;
+    font-size: 0.26rem;
+    color: #333;
+    font-weight: normal;
+}
+.thing>div{
+    height: 2.24rem;
+    background: #f6f6f6;
+}
+.submit{
+    height: 0.9rem;
+    background: #fff;
+    width:100%;
+    position: fixed;
+    bottom: 1rem;
+}
+input[type="submit"]{
+    width: 1.9rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.3rem;
+    background: #fc4d48;
+}
+.delete{
+    position:absolute ;
+    height: 2.24rem;
+    line-height: 2.24rem;
+    width:1.4rem;
+    background: #fc4d48;
+    color: #fff;
+    font-size: 0.32rem;
+    right: 0;
+    top: 0;
+    text-align: center;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/shoppingCart.css">
+    <title>积分商城</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)" style="width: 0;height: 0;"></a>
+    积分商城
+    <a href="" class="r f26 g3">编辑</a>
+</header>
+<form action="">
+    <div class="thing">
+        <h1 class="pl30"><input type="checkbox" id="t1"/><label for="t1" class="ml30">New Balance旗舰一店</label></h1>
+        <div class="df aic pl30 pr30 rel">
+            <input type="checkbox" />
+            <img src="images/shoppingCart/t1.png" alt="" style="width: 1.77rem;height: 1.77rem;margin-left: 0.4rem;margin-right: 0.45rem;"/>
+            <div class="">
+                <p class="f26 g3 lh30">New Balance/NB 574系列三原色 男鞋女鞋复古跑步运动...</p>
+                <p class="f24 g6 mt5">颜色分类：海军蓝；鞋码：42</p>
+                <p class="df jcsb mt15"><span class="f26 gs">¥618</span><span class="f30 g3">×1</span></p>
+            </div>
+            <div class="df" style="display: none;">
+                <div>
+                    <div><span style="display: inline-block;width: 0.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;background: #fff;font-size: 0.3rem;color: #999;" id="reduce">-</span><input value="1" type="text" readonly name="count" id="count" style="width: 0.7rem;line-height: 0.3rem;background: transparent;font-size:0.26rem ;text-align: center;"/><span style="display: inline-block;width: 0.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;background: #fff;font-size: 0.3rem;color: #999;" id="plus">+</span></div>
+                    <p class="f24 g6 mt20">颜色分类：海军蓝；</p>
+                    <p class="f24 g6 mt5">鞋码：42</p>
+                </div>
+                <div class="delete">删除</div>
+            </div>
+        </div>
+    </div>
+    <div class="thing">
+        <h1 class="pl30"><input type="checkbox" id="t2"/><label for="t2" class="ml30">New Balance旗舰一店</label></h1>
+        <div class="df aic pl30 pr30">
+            <input type="checkbox" />
+            <img src="images/shoppingCart/t1.png" alt="" style="width: 1.77rem;height: 1.77rem;margin-left: 0.4rem;margin-right: 0.45rem;"/>
+            <div>
+                <p class="f26 g3 lh30">New Balance/NB 574系列三原色 男鞋女鞋复古跑步运动...</p>
+                <p class="f24 g6 mt5">颜色分类：海军蓝；鞋码：42</p>
+                <p class="df jcsb mt15"><span class="f26 gs">¥618</span><span class="f30 g3">×1</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="submit df aic">
+        <div class="fx1 df aic jcsb">
+            <div class="pl30"><input type="checkbox" id="all"/><label for="all" class="f26 g3 ml20">全选</label></div>
+            <div class="mr10"><span class="f28 g3">合计：</span><span class="f28 gs">¥1236</span></div>
+        </div>
+        <input type="submit" value="去结算（2）"/>
+    </div>
+</form>
+<footer>
+    <ul class="df jcsb">
+        <li >
+            <a href="#" class="df fdc aic">
+                <img src="images/icon1.png" style="width: 0.32rem;height: 0.36rem;">
+                <p >首页</p>
+            </a>
+        </li>
+        <li >
+            <a href="#" class="df fdc aic">
+                <img src="images/icon2.png" style="width: 0.32rem;height: 0.36rem;">
+                <p >分类</p>
+            </a>
+        </li>
+        <li >
+            <a href="#" class="df fdc aic">
+                <img src="images/icon3active.png" style="width: 0.43rem;height: 0.36rem;">
+                <p class="gs">购物车</p>
+            </a>
+        </li>
+        <li >
+            <a href="#" class="df fdc aic">
+                <img src="images/icon4.png" style="width: 0.27rem;height: 0.36rem;">
+                <p >我的</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script>
+    $(function(){
+        function getid(id) { return document.getElementById(id); }
+        function gettag(tag, obj) { if (obj) { return obj.getElementsByTagName(tag) } else { return document.getElementsByTagName(tag) } }
+        (function radio_style() {//3设置样式
+            if (gettag("input")) {
+                var r = gettag("input");
+                function select_element(obj, type) {//1设置背景图片
+                    obj.parentNode.style.background = "url(images/selected.png) no-repeat 0.3rem center";
+                    obj.parentNode.style.backgroundSize = "0.3rem 0.3rem";
+                    if (obj.type == "checkbox") { obj.parentNode.style.background = "url(images/selected.png) no-repeat 0.3rem center";obj.parentNode.style.backgroundSize = "0.3rem 0.3rem"; }
+                    if (type) {
+                        obj.parentNode.style.background = "url(images/select.png) no-repeat 0.3rem center";
+                        obj.parentNode.style.backgroundSize = "0.3rem 0.3rem";
+                        if (obj.type == "checkbox") { obj.parentNode.style.background = "url(images/select.png) no-repeat 0.3rem center"; obj.parentNode.style.backgroundSize = "0.3rem 0.3rem";}
+                    }
+                }
+                for (var i = 0; i < r.length; i++) {
+                    if (r[i].type == "radio" || r[i].type == "checkbox") {
+                        r[i].style.opacity = 0; r[i].style.filter = "alpha(opacity=0)";//隐藏真实的checkbox和radio
+                        r[i].onclick = function() { select_element(this); unfocus(); }
+                        if (r[i].checked == true) { select_element(r[i]); } else { select_element(r[i], 1); }
+                    }
+                }
+                function unfocus() {//2处理未选中
+                    for (var i = 0; i < r.length; i++) {
+                        if (r[i].type == "radio" || r[i].type == "checkbox") { if (r[i].checked == false) { select_element(r[i], 1) } }
+                    }
+                }
+            }
+        })();
+    });
+</script>
+</body>
+</html>
