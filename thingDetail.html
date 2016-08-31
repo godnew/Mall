@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/thingDetail.css">
+    <title>商品详情</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    商品详情
+    <a href="javascript:return false;" id="share">+</a>
+    <div id="collect" style="display: none;">
+        <span id="point"></span>
+        <p>收藏</p>
+        <p>分享</p>
+    </div>
+</header>
+<div id="banner_tabs" class="flexslider">
+    <ul class="slides">
+        <li>
+            <a title="" target="_blank" href="#">
+                <img alt="" style="background: url(images/thingDetail/banner.png) no-repeat center;width:100%;height: 4rem;" src="images/thingDetail/banner.png" class="bannerSlider">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img alt="" style="background: url(images/homePage/banner.png) no-repeat center;width:100%;height: 4rem;" src="images/homePage/banner.png" class="bannerSlider">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img style="background: url(images/homePage/banner1.png) no-repeat center;width:100%;height: 4rem;" src="images/homePage/banner1.png" class="bannerSlider">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img style="background: url(images/homePage/banner1.png) no-repeat center;width:100%;height: 4rem;" src="images/homePage/banner1.png" class="bannerSlider">
+            </a>
+        </li>
+    </ul>
+    <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li class="active"><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+    </ol>
+</div>
+<div id="middle">
+    <p class="f28 g3 lh40">送1.5G流量Apple/苹果 iPhone 6s公开版全网通公开版 苹果手机6s</p>
+    <p class="price gs"><span class="f28">￥</span>4533.00-5499.00<span>今日特惠</span></p>
+    <p class="f24 g9 mt15">价格 <span class="tdlt">￥4879.00-5845.00</span></p>
+    <p class="f24 g9 mt30"><span>快递：0</span><span style="margin-left: 1.2rem;">月销量：342</span></p>
+</div>
+<div id="intro">
+    <h1 class="g3 f28 n">商品介绍</h1>
+    <div>
+        <p class="f22 g3 pr20 pl20 mt20 lh30">关于iPhone 6s和iPhone 6s plus处理器品牌问题，亲们需要知道以下几点：</p>
+        <p class="f20 g3 pr20 pl20  lh30">1.经苹果公司介绍，三星和台积电2个版本的芯片都符合苹果官方标准，在性 能上并无明显的差异，不影响实际使用。</p>
+        <p class="f20 g3 pr20 pl20  lh30">2.因苹果产品激活后不支持无理由退货，所以不能以CUP芯片品牌差别进行退
+            机。苹果手机退机需要到官方售后检测属质量问题，方可符合退机条件。</p>
+    </div>
+    <div class="df  f20 gs  lh30 mt15 mb15">
+        <span class="ml20">注:</span>
+        <div class="fx1">
+            <p>1.已激活的iPhone不支持七天无理由退换货，请确认需求后再激活使用。</p>
+            <p>2.苹果机器激活15天内有质量问题，需邮寄回我司协助处理的，请务必
+                保证寄回到我司售后的时间必须是激活时间15天内。（因苹果现在无
+                法申请故障换机，如超过只能做维修处理。）</p>
+        </div>
+    </div>
+</div>
+<div class="pct100">
+    <img src="images/thingDetail/detail.png" alt="" class="pct100"/>
+</div>
+<div id="btn" class="df">
+    <div class="fx1 tc">加入购物车</div>
+    <div class="fx1 tc">立即购买</div>
+</div>
+<script src="js/slider.js"></script>
+<script src="js/touch-0.2.11-min.js"></script>
+<script>
+    $(function(){
+        $("#share").click(function(){
+            if($(this).text()=="+"){
+                $(this).html("×");
+                $("#collect").show();
+            }else{
+                $(this).html("+");
+                $("#collect").hide();
+            }
+        });
+        var bannerSlider = new Slider($('#banner_tabs'), {
+            time: 5000,
+            delay: 400,
+            event: 'hover',
+            auto: true,
+            mode: 'fade',
+            controller: $('#bannerCtrl'),
+            activeControllerCls: 'active'
+        });
+        touch.on('.bannerSlider', 'swipeleft', function(ev){
+            bannerSlider.next();
+        });
+        touch.on('.bannerSlider', 'swiperight', function(ev){
+            bannerSlider.prev();
+        });
+    });
+</script>
+</body>
+</html>

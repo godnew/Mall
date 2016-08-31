@@ -53,18 +53,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .pct75{width:75%;}
 .pct80{width:80%;}
 .pct90{width:90%;}
-.apple {width:100%;}
-/* line-height */
-.lh0{line-height:0;}
-.lh16{line-height:.14rem;}
-.lh16{line-height:.16rem;}
-.lh18{line-height:.18rem;}
-.lh20{line-height:.20rem;}
-.lh22{line-height:.22rem;}
-.lh24{line-height:.24rem;}
-.lh30{line-height:.30rem;}
-.lh80{line-height: 0.8rem;}
-.lh100{line-height: 1.00rem;}
+.pct100 {width:100%;}
 /* margin */
 .m0{margin:0;}
 .ml1{margin-left:.01rem;}
@@ -193,12 +182,25 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .f16{font-size:.16rem;line-height: 0.16rem; }
 .f18{font-size:.18rem;line-height:  0.18rem;}
 .f20{font-size:.20rem;line-height:  0.2rem;}
+.f22{font-size:.22rem;line-height:  0.22rem;}
 .f24{font-size:.24rem;line-height:  0.24rem;}
 .f26{font-size: 0.26rem;line-height:  0.26rem;}
 .f28{font-size:.28rem;line-height:.28rem; }
 .f30{font-size: .30rem;line-height:.3rem;}
 .f32{font-size: .32rem;line-height:.32rem;}
 .f34{font-size: .34rem;line-height:.34rem;}
+/* line-height */
+.lh0{line-height:0;}
+.lh16{line-height:.14rem;}
+.lh16{line-height:.16rem;}
+.lh18{line-height:.18rem;}
+.lh20{line-height:.20rem;}
+.lh22{line-height:.22rem;}
+.lh24{line-height:.24rem;}
+.lh30{line-height:.30rem;}
+.lh40{line-height: 0.4rem;}
+.lh80{line-height: 0.8rem;}
+.lh100{line-height: 1.00rem;}
 /* font-family */
 .fa{font-family:Arial;}
 .ft{font-family:Tahoma;}
@@ -210,6 +212,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .n{font-weight:normal; font-style:normal; white-space: normal;}
 .b{font-weight:bold;}
 .i{font-style:italic;}
+.tdlt{text-decoration: line-through}
 /* text-align */
 .tc{text-align:center;}
 .tr{text-align:right;}

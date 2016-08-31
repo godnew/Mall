@@ -1,0 +1,151 @@
+body{
+    background: #eee;
+    padding-top: 0.88rem;
+    padding-bottom: 0.9rem;
+}
+header{
+    background: #fc4d48;
+    color: #fff;
+}
+header a:first-child{
+    background-image:url(../images/back-white.png);
+}
+header a:nth-of-type(2){
+    display: inline-block;
+    float: right;
+    width: 0.32rem;
+    height: 0.32rem;
+    font-size: 0.6rem;
+    color: #fff;
+    line-height: 0.2rem;
+}
+#collect{
+    position: absolute;
+    bottom: -1.15rem;
+    right: 0.25rem;
+    border-radius:0.1rem ;
+    background: #fff;
+}
+#collect p{
+    line-height: 0.54rem;
+    width: 0.96rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #999;
+}
+#collect p:nth-of-type(1){
+    border-bottom: 0.02rem solid #eee;
+}
+#point{
+    display: inline-block;
+    position: absolute;
+    border-bottom: 0.12rem solid #fff;
+    border-left:0.07rem solid transparent ;
+    border-right:0.07rem solid transparent ;
+    top:-0.12rem;
+    right: 0.1rem;
+}
+.flexslider {
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.flexslider .slides li {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom:0.35rem;
+    text-align: center;
+    font-size: 0.15rem;
+}
+
+.flex-control-nav li {
+    margin-left: 0.08rem;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.flex-control-paging li a {
+    background: url(../images/thingDetail/dot.png) no-repeat 0 -0.1rem;
+    background-size:0.1rem 0.2rem ;
+    display: block;
+    height: 0.1rem;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 0.1rem;
+    cursor: pointer;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+    background-position: 0 0;
+}
+.flexslider .slides a img {
+    width: 100%;
+    display: block;
+}
+#middle{
+    height: 2.38rem;
+    padding:0.12rem 0.36rem 0.2rem 0.36rem;
+    background: #fff;
+    border-top:0.2rem solid #eee;
+    border-bottom: 0.2rem solid #eee;
+}
+.price{
+    font-size: 0.5rem;
+}
+.price span:last-child{
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #fff;
+    background: #fc4d48;
+    margin-left: 0.3rem;
+    position: relative;
+    top:-0.1rem;
+}
+#intro{
+    padding:0 0.2rem;
+    background: #fff;
+    border-bottom: 0.2rem solid #eee;
+}
+#intro h1{
+    line-height: 0.8rem;
+}
+#intro>div:nth-of-type(1){
+    border-radius: 0.1rem;
+    border: 1px solid #eee;
+    background: #fef8fc;
+    height: 2.1rem;
+}
+#btn{
+    position: fixed;
+    bottom: 0;
+    height: 0.9rem;
+    width: 100%;
+    border-top: 0.01rem solid #fc4d48;
+}
+#btn>div:first-child{
+    line-height: 0.9rem;
+    font-size: 0.36rem;
+    color: #fc4d48;
+    background: #fff;
+}
+#btn>div:last-child{
+    line-height: 0.9rem;
+    font-size: 0.36rem;
+    color: #fff;
+    background: #fc4d48;
+}
