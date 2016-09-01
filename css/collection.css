@@ -1,0 +1,77 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+.title{
+    width:5.5rem;
+    margin:auto;
+    margin-top:0.2rem;
+    font-size: 0.36rem;
+    color: #fc4d48;
+}
+#first{
+    border-top-left-radius: 0.1rem;
+    -moz-border-radius-topleft: 0.1rem;
+    -webkit-border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
+    -moz-border-radius-bottomleft: 0.1rem;
+    -webkit-border-bottom-left-radius: 0.1rem;
+    border:1px solid #fc4d48;
+    line-height: 0.66rem;
+    width:50%;
+    text-align: center;
+}
+#second{
+    border-top-right-radius: 0.1rem;
+    -moz-border-radius-topright: 0.1rem;
+    -webkit-border-top-right-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    -moz-border-radius-bottomright: 0.1rem;
+    -webkit-border-bottom-right-radius: 0.1rem;
+    border:1px solid #fc4d48;
+    line-height: 0.66rem;
+    width:50%;
+    text-align: center;
+}
+.topActive{
+    background: #fc4d48;
+    color: #fff;
+}
+.content1{
+    padding:0 0.2rem;
+}
+.content1 li{
+    border-radius: 0.04rem;
+    margin-top: 0.2rem;
+    padding:0.2rem;
+    height: 1.6rem;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+    background:#fff url(../images/right.png) no-repeat 6.7rem center;
+    background-size: 0.16rem 0.3rem;
+}
+.content1 li img{
+    width: 2rem;
+    height: 1.6rem;
+}
+.content2{
+    padding:0 0.2rem;
+}
+.content2 li{
+    border-radius: 0.04rem;
+    margin-top: 0.2rem;
+    padding:0.2rem;
+    height: 1.6rem;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+    background:#fff url(../images/right.png) no-repeat 6.7rem center;
+    background-size: 0.16rem 0.3rem;
+}
+.content2 li img{
+    width: 2rem;
+    height: 1.6rem;
+}

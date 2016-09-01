@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/collection.css"/>
+    <title>我的收藏</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    我的收藏
+</header>
+<div class="title df">
+    <div id="first" class="topActive">店铺</div>
+    <div id="second">商品</div>
+</div>
+<ul class="content1">
+    <li>
+        <img src="images/doorSearch/thing1.png" alt=""/>
+        <div class="ml20">
+            <p class="f32 g3 mt15">苹果数码</p>
+            <div class="f26 g6  df mt20" ><span>电话：</span><p class="" style="width: 3.2rem; ">400-4135-5236</p></div>
+            <p class="f26 g6 mt20">地址：松江新城128号A区1F</p>
+        </div>
+    </li>
+    <li>
+        <img src="images/doorSearch/thing1.png" alt=""/>
+        <div class="ml20">
+            <p class="f32 g3 mt15">苹果数码</p>
+            <div class="f26 g6  df mt20" ><span>电话：</span><p class="" style="width: 3.2rem; ">400-4135-5236</p></div>
+            <p class="f26 g6 mt20">地址：松江新城128号A区1F</p>
+        </div>
+    </li>
+    <li>
+        <img src="images/doorSearch/thing1.png" alt=""/>
+        <div class="ml20">
+            <p class="f32 g3 mt15">苹果数码</p>
+            <div class="f26 g6  df mt20" ><span>电话：</span><p class="" style="width: 3.2rem; ">400-4135-5236</p></div>
+            <p class="f26 g6 mt20">地址：松江新城128号A区1F</p>
+        </div>
+    </li>
+</ul>
+<ul class="content2" style="display: none;">
+    <li>
+        <img src="images/doorSearch/thing1.png" alt=""/>
+        <div class="ml20">
+            <p class="f32 g3 ">博洋家纺床上五件套</p>
+            <div class="f24 g6  df mt20 pr30" >博洋家纺 床上用品 高支全棉印花床单 四件套-陌上香影</div>
+            <p class="f34 gs mt20">￥299</p>
+        </div>
+    </li>
+    <li>
+        <img src="images/doorSearch/thing1.png" alt=""/>
+        <div class="ml20">
+            <p class="f32 g3">博洋家纺床上五件套</p>
+            <div class="f24 g6  df mt20 pr30" >博洋家纺 床上用品 高支全棉印花床单 四件套-陌上香影</div>
+            <p class="f34 gs mt20">￥299</p>
+        </div>
+    </li>
+    <li>
+        <img src="images/doorSearch/thing1.png" alt=""/>
+        <div class="ml20">
+            <p class="f32 g3 ">博洋家纺床上五件套</p>
+            <div class="f24 g6  df mt20 pr30" >博洋家纺 床上用品 高支全棉印花床单 四件套-陌上香影</div>
+            <p class="f34 gs mt20">￥299</p>
+        </div>
+    </li>
+</ul>
+<script>
+    $(function(){
+        $(".title").children().click(function(){
+            $(this).addClass("topActive").siblings().removeClass("topActive");
+            if($(this).attr('id')=="first"){
+                $(".content1").show();
+                $(".content2").hide();
+            }else{
+                $(".content1").hide();
+                $(".content2").show();
+            }
+        });
+    });
+</script>
+</body>
+</html>
