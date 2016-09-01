@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/mine.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <title>会员登录</title>
+</head>
+<body>
+    <header>
+        <span id="message"></span>
+        <div id="head"></div>
+        <div id="btn" class="df jcc mt20" style="">
+            <div id="login">登录</div>
+            <div>注册</div>
+        </div>
+        <div id="id" class="mt20" style="display: none">
+            <p class="tc f28 wh">13*******61</p>
+            <p class="tc f28 wh mt20  df aic jcc"><img src="images/mine/vip.png" alt="" style="width: 0.31rem;height: 0.38rem;"/>铜牌会员</p>
+        </div>
+        <ul class="df jcsb tc">
+            <li class="fx1">
+                <p class="f24 wh mt20">￥6742.36</p>
+                <p class="f24 wh mt15">消费金额</p>
+            </li>
+            <li class="fx1">
+                <p class="f24 wh mt20">￥6742.36</p>
+                <p class="f24 wh mt15">剩余金额</p>
+            </li>
+            <li class="fx1">
+                <p class="f24 wh mt20">1888</p>
+                <p class="f24 wh mt15">积分</p>
+            </li>
+        </ul>
+    </header>
+    <ul class="content df fww">
+        <li>
+            <img src="images/mine/icon1.png" alt=""/>
+            <p class="f24 g3 tc">个人信息</p>
+        </li>
+        <li>
+            <img src="images/mine/icon2.png" alt=""/>
+            <p class="f24 g3 tc">我的收藏</p>
+        </li>
+        <li>
+            <img src="images/mine/icon3.png" alt=""/>
+            <p class="f24 g3 tc">我的优惠券</p>
+        </li>
+        <li>
+            <img src="images/mine/icon4.png" alt=""/>
+            <p class="f24 g3 tc">申请VIP</p>
+        </li>
+        <li>
+            <img src="images/mine/icon5.png" alt=""/>
+            <p class="f24 g3 tc">绑定VIP</p>
+        </li>
+        <li>
+            <img src="images/mine/icon6.png" alt=""/>
+            <p class="f24 g3 tc">充值</p>
+        </li>
+        <li>
+            <img src="images/mine/icon7.png" alt=""/>
+            <p class="f24 g3 tc">会员特权</p>
+        </li>
+        <li>
+            <img src="images/mine/icon8.png" alt=""/>
+            <p class="f24 g3 tc">专属客服</p>
+        </li>
+        <li>
+            <img src="images/mine/icon9.png" alt=""/>
+            <p class="f24 g3 tc">更多</p>
+        </li>
+    </ul>
+    <footer>
+        <ul class="df jcsb">
+            <li >
+                <a href="#" class="df fdc aic">
+                    <img src="images/icon1.png" style="width: 0.32rem;height: 0.36rem;">
+                    <p >首页</p>
+                </a>
+            </li>
+            <li >
+                <a href="#" class="df fdc aic">
+                    <img src="images/icon2.png" style="width: 0.32rem;height: 0.36rem;">
+                    <p >分类</p>
+                </a>
+            </li>
+            <li >
+                <a href="#" class="df fdc aic">
+                    <img src="images/icon3.png" style="width: 0.43rem;height: 0.36rem;">
+                    <p >购物车</p>
+                </a>
+            </li>
+            <li >
+                <a href="#" class="df fdc aic">
+                    <img src="images/icon4active.png" style="width: 0.27rem;height: 0.36rem;">
+                    <p class="gs">我的</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        $(function(){
+            $("#login").click(function(){
+                $(this).parent().hide();
+                $("#id").show();
+            });
+        })
+    </script>
+</body>
+</html>

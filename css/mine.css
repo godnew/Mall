@@ -1,0 +1,68 @@
+body{
+    background: #eee;
+    padding-bottom: 1rem;
+}
+header{
+    height: 3.5rem;
+    position: relative;
+    background: #fc4d48;
+    padding-top: 0.9rem;
+}
+#message{
+    display: inline-block;
+    position: absolute;
+    width: 0.32rem;
+    height: 0.32rem;
+    background: url(../images/mine/message.png) no-repeat center center;
+    background-size:100% 100%;
+    right:0.3rem;
+    top:0.3rem;
+}
+#head{
+    width: 1.24rem;
+    height: 1.24rem;
+    margin:0 auto 0 auto;
+    background: #fff url(../images/mine/head.png) no-repeat center center;
+    background-size: 0.5rem 0.54rem;
+    border-radius: 1rem;
+}
+#btn div{
+    width: 1.4rem;
+    height: 0.7rem;
+    border-radius: 0.1rem;
+    border: 0.02rem solid #fff;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #fff;
+}
+#btn div:first-child{
+    margin-right: 0.8rem;
+}
+header ul{
+    height: 1rem;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.content{
+    margin-top: 0.2rem;
+    background: #fff;
+    width: 100%;
+}
+.content li{
+    height: 2.1rem;
+    width: 33%;
+    border-bottom: 1px solid #eee;
+}
+.content li:nth-of-type(3n-1){
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.content li img{
+    display: block;
+    width: 0.56rem;
+    height: 0.50rem;
+    margin:0.5rem auto 0.66rem auto;
+}
