@@ -16,7 +16,7 @@
 <header class="tc">
     <a href="javascript:history.go(-1)" style="width: 0;height: 0;"></a>
     积分商城
-    <a href="" class="r f26 g3">编辑</a>
+    <a href="" class="r f26 g3" id="edit">编辑</a>
 </header>
 <form action="">
     <div class="thing">
@@ -24,12 +24,12 @@
         <div class="df aic pl30 pr30 rel">
             <input type="checkbox" />
             <img src="images/shoppingCart/t1.png" alt="" style="width: 1.77rem;height: 1.77rem;margin-left: 0.4rem;margin-right: 0.45rem;"/>
-            <div class="">
+            <div class="introduce">
                 <p class="f26 g3 lh30">New Balance/NB 574系列三原色 男鞋女鞋复古跑步运动...</p>
                 <p class="f24 g6 mt5">颜色分类：海军蓝；鞋码：42</p>
                 <p class="df jcsb mt15"><span class="f26 gs">¥618</span><span class="f30 g3">×1</span></p>
             </div>
-            <div class="df" style="display: none;">
+            <div class="df deleteThing" style="display: none;">
                 <div>
                     <div><span style="display: inline-block;width: 0.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;background: #fff;font-size: 0.3rem;color: #999;" id="reduce">-</span><input value="1" type="text" readonly name="count" id="count" style="width: 0.7rem;line-height: 0.3rem;background: transparent;font-size:0.26rem ;text-align: center;"/><span style="display: inline-block;width: 0.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;background: #fff;font-size: 0.3rem;color: #999;" id="plus">+</span></div>
                     <p class="f24 g6 mt20">颜色分类：海军蓝；</p>
@@ -41,13 +41,21 @@
     </div>
     <div class="thing">
         <h1 class="pl30"><input type="checkbox" id="t2"/><label for="t2" class="ml30">New Balance旗舰一店</label></h1>
-        <div class="df aic pl30 pr30">
+        <div class="df aic pl30 pr30 rel">
             <input type="checkbox" />
             <img src="images/shoppingCart/t1.png" alt="" style="width: 1.77rem;height: 1.77rem;margin-left: 0.4rem;margin-right: 0.45rem;"/>
-            <div>
+            <div class="introduce">
                 <p class="f26 g3 lh30">New Balance/NB 574系列三原色 男鞋女鞋复古跑步运动...</p>
                 <p class="f24 g6 mt5">颜色分类：海军蓝；鞋码：42</p>
                 <p class="df jcsb mt15"><span class="f26 gs">¥618</span><span class="f30 g3">×1</span></p>
+            </div>
+            <div class="df deleteThing" style="display: none;">
+                <div>
+                    <div><span style="display: inline-block;width: 0.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;background: #fff;font-size: 0.3rem;color: #999;" id="reduce">-</span><input value="1" type="text" readonly name="count" id="count" style="width: 0.7rem;line-height: 0.3rem;background: transparent;font-size:0.26rem ;text-align: center;"/><span style="display: inline-block;width: 0.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;background: #fff;font-size: 0.3rem;color: #999;" id="plus">+</span></div>
+                    <p class="f24 g6 mt20">颜色分类：海军蓝；</p>
+                    <p class="f24 g6 mt5">鞋码：42</p>
+                </div>
+                <div class="delete">删除</div>
             </div>
         </div>
     </div>
@@ -118,6 +126,26 @@
                 }
             }
         })();
+        var edit=true;
+        $("#edit").click(function(e){
+            if(edit){
+                e.preventDefault();
+                edit=false;
+                $(this).html("完成");
+                $(".introduce").hide();
+                $(".deleteThing").show();
+            }else{
+                e.preventDefault();
+                edit=true;
+                $(this).html("编辑");
+                $(".introduce").show();
+                $(".deleteThing").hide();
+            }
+        });
+        $(".delete").click(function(){
+            $(this).parents(".thing").remove();
+            console.log(123);
+        });
     });
 </script>
 </body>
