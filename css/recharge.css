@@ -1,0 +1,51 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+ul{
+    margin-top: 0.2rem;
+}
+ul li{
+    height: 1.1rem;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    background-position:6.4rem center ;
+    background-size:0.5rem 0.5rem ;
+    background-repeat: no-repeat;
+}
+ul li:nth-of-type(1) div{
+    background:url(../images/recharge/icon1.png) no-repeat 0.5rem center;
+    background-size: 0.88rem 0.88rem;
+}
+ul li:nth-of-type(2) div{
+    background:url(../images/recharge/icon2.png) no-repeat 0.5rem center;
+    background-size: 0.88rem 0.88rem;
+}
+ul li:nth-of-type(3) div{
+    background:url(../images/recharge/icon3.png) no-repeat 0.44rem center;
+    background-size: 1rem 0.64rem;
+}
+ul li div{
+    height: 1.1rem;
+    padding-left: 1.8rem;
+    line-height: 1.1rem;
+    font-size: 0.28rem;
+    color: #333;
+}
+form div{
+    height: 1.1rem;
+    background: #fff;
+    margin-top: 0.2rem;
+}
+input[type="submit"]{
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background: #fc4d48;
+    margin:0.2rem auto 0 auto;
+    width: 7.1rem;
+    font-size: 0.28rem;
+    border-radius: 0.1rem;
+}

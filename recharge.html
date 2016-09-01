@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/recharge.css"/>
+    <title>申请VIP</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    申请VIP
+</header>
+<ul>
+    <li>
+        <div>微信支付</div>
+    </li>
+    <li>
+        <div>支付宝支付</div>
+    </li>
+    <li>
+        <div>银行卡支付</div>
+    </li>
+</ul>
+<form action="">
+    <div class="df aic"><label for="money" class="g3 f28 ml30 mr5">金额（¥）</label><input type="text" id="money" class="gs f28 bgwh ml30"/></div>
+    <input type="submit" value="下一步"/>
+</form>
+<script>
+    $(function(){
+        $("ul li").click(function(){
+            $(this).css("backgroundImage","url(images/recharge/select.png)").siblings().css("backgroundImage","none");
+        });
+    })
+</script>
+</body>
+</html>
