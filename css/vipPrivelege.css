@@ -1,0 +1,10 @@
+body{
+    padding-top:0.88rem;
+    background: #eeeeee;
+}
+article{
+    margin:0.2rem;
+    padding:0.24rem;
+    background: #fff;
+    border-radius: 0.1rem;
+}
