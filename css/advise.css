@@ -1,0 +1,31 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+form{
+    margin-top: 0.2rem;
+}
+textarea{
+    display: block;
+    margin:0 0.2rem;
+    padding:0.14rem 0.2rem 0 0.2rem;
+    font-size: 0.28rem;
+    color: #999;
+    line-height: 0.4rem;
+    width: 6.7rem;
+    border:none;
+    border-radius: 0.1rem;
+    background: #fff;
+}
+input[type="submit"]{
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background: #fc4d48;
+    margin:0.2rem auto 0 auto;
+    width: 7.1rem;
+    font-size: 0.28rem;
+    border-radius: 0.1rem;
+}
