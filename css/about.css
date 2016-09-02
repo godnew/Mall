@@ -1,0 +1,37 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+.banner{
+    width: 7.1rem;
+    margin: 0.2rem auto 0.2rem auto;
+    border-radius: 0.1rem;
+    height: 3.24rem;
+    background: #fff;
+}
+.intro{
+    width: 7.1rem;
+    margin: 0.2rem auto 0.2rem auto;
+    border-radius: 0.1rem;
+    height: 5rem;
+    background: #fff;
+}
+.intro p{
+    margin:0.15rem 0.2rem 0 0.2rem;
+    font-size: 0.26rem;
+    color: #333;
+    line-height: 0.4rem;
+}
+.address{
+    width: 7.1rem;
+    margin: 0.2rem auto 0.2rem auto;
+    padding:0.05rem 0;
+    border-radius: 0.1rem;
+    background: #fff;
+}
+.address p{
+    margin:0.15rem 0.2rem 0 0.2rem;
+    font-size: 0.26rem;
+    color: #333;
+    line-height: 0.4rem;
+}
