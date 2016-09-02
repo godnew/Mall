@@ -1,0 +1,46 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+ul{
+    margin-top: 0.2rem;
+}
+ul li{
+    height: 0.8rem;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+label{
+    width: 1.9rem;
+    font-size: 0.28rem;
+    color: #333;
+}
+input[type="text"]{
+    width: 4rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #fff;
+    font-size: 0.28rem;
+}
+#city{
+    text-align: right;
+    padding-right: 0.3rem;
+    background: url(../images/right.png) no-repeat right center;
+    background-size: 0.16rem 0.3rem;
+}
+#street{
+    text-align: right;
+    padding-right: 0.3rem;
+    background: url(../images/right.png) no-repeat right center;
+    background-size: 0.16rem 0.3rem;
+}
+textarea{
+    height: 2.2rem;
+    padding:0.25rem 0.3rem;
+    font-size: 0.28rem;
+    color: #333;
+    width: 6.9rem;
+    border:none;
+    background: #fff;
+    font-family: "microsoft yahei";
+}

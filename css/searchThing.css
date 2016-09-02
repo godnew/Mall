@@ -1,0 +1,42 @@
+body{
+    background: #eeeeee;
+    padding-top: 0.88rem;
+}
+header{
+    padding: 0 0.2rem;
+}
+header input{
+    width: 7.1rem;
+    margin-left: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #fff;
+}
+#content{
+    border-radius: 0.1rem;
+    margin:0.1rem auto 0 auto;
+    width: 7.1rem;
+    background: #fff;
+    height: 5.3rem;
+}
+ul li{
+    width: 33%;
+    text-align: center;
+}
+ul li span{
+    font-size: 0.24rem;
+    color: #999;
+    display: inline-block;
+    border-radius: 0.1rem;
+    border:2px solid #eee;
+    padding:0.04rem;
+
+}
+h1{
+    line-height: 0.8rem;
+    padding-left: 0.3rem;
+    font-size: 0.28rem;
+    color: #666;
+    font-weight: normal;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/addAddress.css">
+    <title>添加地址</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    添加地址
+    <a href="" class="r f26 gs">保存</a>
+</header>
+<form action="">
+    <ul>
+        <li class="pl20 df aic pr30"><label for="name">收货人</label><input type="text" id="name"/></li>
+        <li class="pl20 df aic pr30"><label for="phone">联系电话</label><input type="text" id="phone"/></li>
+        <li class="pl20 df aic pr30 jcsb"><label for="city">所在地区</label><input type="text" id="city" placeholder="请选择" readonly/></li>
+        <li class="pl20 df aic pr30 jcsb"><label for="street">所在街道</label><input type="text" id="street" placeholder="请选择" readonly/></li>
+    </ul>
+    <textarea name="" id="" cols="30" rows="10" placeholder="详细地址"></textarea>
+</form>
+</body>
+</html>

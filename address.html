@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/address.css"/>
+    <title>收货地址</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    收货地址
+</header>
+<ul>
+    <li>
+        <p class="pr20 pl20 f28 g3 df jcsb mt30"><span>张三</span><span>13542685234</span></p>
+        <p class="f24 g3 pl20 mt20 mb30">上海市松江区松江新城1888弄888号</p>
+        <div class="df jcsb aic bte pr20 pl20">
+            <div class="df aic">
+                <input type="radio" name="select" id="s1"/>
+                <label for="s1" class="ml20 f24 g3">默认地址</label>
+            </div>
+            <div class="f24 g3">
+                <span class="edit">编辑</span>
+                <span>删除</span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p class="pr20 pl20 f28 g3 df jcsb mt30"><span>张三</span><span>13542685234</span></p>
+        <p class="f24 g3 pl20 mt20 mb30">上海市松江区松江新城1888弄888号</p>
+        <div class="df jcsb aic bte pr20 pl20">
+            <div class="df aic">
+                <input type="radio" name="select" id="s2"/>
+                <label for="s2" class="ml20 f24 g3">默认地址</label>
+            </div>
+            <div class="f24 g3">
+                <span class="edit">编辑</span>
+                <span>删除</span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p class="pr20 pl20 f28 g3 df jcsb mt30"><span>张三</span><span>13542685234</span></p>
+        <p class="f24 g3 pl20 mt20 mb30">上海市松江区松江新城1888弄888号</p>
+        <div class="df jcsb aic bte pr20 pl20">
+            <div class="df aic">
+                <input type="radio" name="select" id="s3"/>
+                <label for="s3" class="ml20 f24 g3">默认地址</label>
+            </div>
+            <div class="f24 g3">
+                <span class="edit">编辑</span>
+                <span>删除</span>
+            </div>
+        </div>
+    </li>
+</ul>
+<script>
+    $(function(){
+        function getid(id) { return document.getElementById(id); }
+        function gettag(tag, obj) { if (obj) { return obj.getElementsByTagName(tag) } else { return document.getElementsByTagName(tag) } }
+        (function radio_style() {//3设置样式
+            if (gettag("input")) {
+                var r = gettag("input");
+                function select_element(obj, type) {//1设置背景图片
+                    obj.parentNode.style.background = "url(images/selected.png) no-repeat left center";
+                    obj.parentNode.style.backgroundSize = "0.3rem 0.3rem";
+                    $(obj).siblings().html("默认地址");
+                    if (obj.type == "checkbox") { obj.parentNode.style.background = "url(images/selected.png) no-repeat left center";obj.parentNode.style.backgroundSize = "0.3rem 0.3rem"; }
+                    if (type) {
+                        obj.parentNode.style.background = "url(images/select.png) no-repeat left center";
+                        obj.parentNode.style.backgroundSize = "0.3rem 0.3rem";
+                        $(obj).siblings().html("设置默认");
+                        if (obj.type == "checkbox") { obj.parentNode.style.background = "url(images/select.png) no-repeat left center"; obj.parentNode.style.backgroundSize = "0.3rem 0.3rem";}
+                    }
+                }
+                for (var i = 0; i < r.length; i++) {
+                    if (r[i].type == "radio" || r[i].type == "checkbox") {
+                        r[i].style.opacity = 0; r[i].style.filter = "alpha(opacity=0)";//隐藏真实的checkbox和radio
+                        r[i].onclick = function() { select_element(this); unfocus(); }
+                        if (r[i].checked == true) { select_element(r[i]); } else { select_element(r[i], 1); }
+                    }
+                }
+                function unfocus() {//2处理未选中
+                    for (var i = 0; i < r.length; i++) {
+                        if (r[i].type == "radio" || r[i].type == "checkbox") { if (r[i].checked == false) { select_element(r[i], 1) } }
+                    }
+                }
+            }
+        })();
+    });
+</script>
+</body>
+</html>

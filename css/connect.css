@@ -1,0 +1,39 @@
+body{
+    padding-top: 0.88rem;
+    background: #eee;
+}
+.top{
+    height: 2.3rem;
+    background: #fff;
+    margin-top: 0.2rem;
+    padding-top: 0.01rem;
+}
+.top div{
+    padding-left: 1.1rem;
+    background: url(../images/connect/phone.png) no-repeat 0.2rem 0;
+    background-size:0.7rem 0.7rem ;
+}
+input[type="button"]{
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background: #fc4d48;
+    margin:0.4rem auto 0 auto;
+    width: 7.1rem;
+    font-size: 0.28rem;
+    border-radius: 0.1rem;
+}
+ul{
+    margin-top: 0.2rem;
+}
+ul li{
+    padding-left: 0.2rem;
+    height: 0.8rem;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+ul li div:first-child{
+    width: 1.55rem;
+}

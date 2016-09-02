@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/CommonMB.css">
+    <link rel="stylesheet" href="css/Header.css"/>
+    <link rel="stylesheet" href="css/record.css"/>
+    <title>购买记录</title>
+</head>
+<body>
+<header class="tc">
+    <a href="javascript:history.go(-1)"></a>
+    购买记录
+</header>
+<ul id="content">
+    <li>
+        <div class="df jcsb f28 pr30 pl30 detail aic"><span>2016.06.05</span><span>订单号：123456789</span></div>
+        <ul class="all" style="display: none;">
+            <li class="f24 g6 df jcsb aic bbe"><span>商品名称</span><span>商品数量</span><span>金额</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>总计</span><span></span><span>¥166.66</span></li>
+        </ul>
+    </li>
+    <li>
+        <div class="df jcsb f28 pr30 pl30 detail aic"><span>2016.06.05</span><span>订单号：123456789</span></div>
+        <ul class="all" style="display: none;">
+            <li class="f24 g6 df jcsb aic bbe"><span>商品名称</span><span>商品数量</span><span>金额</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>总计</span><span></span><span>¥166.66</span></li>
+        </ul>
+    </li>
+    <li>
+        <div class="df jcsb f28 pr30 pl30 detail aic"><span>2016.06.05</span><span>订单号：123456789</span></div>
+        <ul class="all" style="display: none;">
+            <li class="f24 g6 df jcsb aic bbe"><span>商品名称</span><span>商品数量</span><span>金额</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic bbe"><span>散装饼干</span><span>1</span><span>¥16.66</span></li>
+            <li class="f24 g6 df jcsb aic"><span>总计</span><span></span><span>¥166.66</span></li>
+        </ul>
+    </li>
+</ul>
+<script>
+    $(function(){
+        $(".detail").click(function(){
+            $(".detail").removeClass("active");
+            $(".all").hide();
+            $(this).toggleClass("active").siblings(".all").toggle();
+        });
+    });
+</script>
+</body>
+</html>
