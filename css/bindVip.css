@@ -1,0 +1,48 @@
+body{
+    padding-top:0.88rem;
+    background: #eee;
+}
+ul{
+    padding:0 0.2rem;
+}
+ul li{
+    margin-top: 0.2rem;
+    height: 0.9rem;
+    background: #fff;
+}
+input[type="text"]{
+    font-size: 0.32rem ;
+    color: #666;
+    margin-left: 0.4rem;
+    background: #fff;
+    width: 3rem;
+}
+.code div{
+    height: 0.9rem;
+    line-height: 0.9rem;
+}
+.code div:first-child{
+    width: 4.2rem;
+    margin-right: 0.2rem;
+    background: #fff;
+}
+.code div:last-child{
+    flex:1;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #fc4d48;
+    border-radius: 0.1rem;
+}
+input[type="submit"]{
+    display: block;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    color: #fff;
+    background: #fc4d48;
+    margin:0.6rem auto 0 auto;
+    width: 6rem;
+    font-size: 0.28rem;
+    border-radius: 0.1rem;
+}
