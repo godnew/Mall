@@ -1,0 +1,23 @@
+body{
+    padding-top:0.88rem;
+    background: #eee;
+}
+header{
+    background: #fc4d48;
+    color: #fff;
+}
+header a:first-child{
+    background: url(../images/back-white.png) no-repeat center center;
+    background-size:0.2rem 0.32rem ;
+}
+ul li{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    background: #fff url(../images/right.png) no-repeat 7.12rem center;
+    background-size: 0.16rem 0.3rem;
+    font-size: 0.28rem;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
